@@ -1,0 +1,60 @@
+# ==============================================================================
+# Portfolio Repository Strict Exclusion Policy
+# Prevents accidental inclusion of sensitive code, credentials, or binaries.
+# ==============================================================================
+
+# Environment Files & Secrets
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+secrets/
+credentials/
+
+# Dependencies
+vendor/
+node_modules/
+
+# Databases, Backups & Dumps
+database/*.sqlite
+*.sqlite
+*.sqlite3
+*.sql
+*.sql.gz
+*.bak
+*.backup
+*.dump
+
+# Logs & Framework Runtime Storage
+*.log
+storage/logs/
+*.pail
+*.cache
+
+# Build Outputs & Mobile Binaries
+build/
+dist/
+*.apk
+*.aab
+.gradle/
+.idea/
+.cxx/
+local.properties
+
+# Deployment, Server & Hosting Scripts
+cpanel_helper.php
+setup.php
+package_*.php
+public_html/
+production/
+cpanel_deploy/
+deployment/
+
+# OS & Tooling Metadata
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
